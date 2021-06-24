@@ -4,12 +4,13 @@ const app = new Vue({
     data:{
         dischi: null
     },
+    
     mounted(){
         axios.get('./api/dischi.php')
-            .then(resp => {
-                this.dischi = resp.data
-            }).catch(e =>{
-                console.log(e);
-            })
+        .then(resp => {
+            this.dischi = resp.data
+        }).catch(e =>{
+            console.log(e);
+        })
     }
 })
