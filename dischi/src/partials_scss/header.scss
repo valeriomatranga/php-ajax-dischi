@@ -1,0 +1,16 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+
+    form{
+        display: flex;
+        align-items: center;
+
+        a{
+            padding: 10px;
+        }
+    }
+}

@@ -19,6 +19,6 @@ require __DIR__ . './src/template/head.php';
 require __DIR__ . './src/template/header.php';
 require __DIR__ . './src/template/main.php';
 require __DIR__ . './src/template/script.php';
-
+//var_dump($_SERVER);
 
 

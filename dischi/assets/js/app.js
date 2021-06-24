@@ -16,7 +16,7 @@ var app = new Vue({
     var _this = this;
 
     axios.get('./api/dischi.php').then(function (resp) {
-      _this.dischi = resp.data;
+      _this.dischi = resp.data; //console.log(this.dischi);
     })["catch"](function (e) {
       console.log(e);
     });
