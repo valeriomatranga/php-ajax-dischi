@@ -1,7 +1,7 @@
+<h1>PHP</h1>
 <main class='dischi'>
     <?php
     foreach ($dischi as $disco) : ?>
-
     <div class="lista_album">
         <div class='album'>
             <img src="<?php echo $disco['poster'];?>" alt="">

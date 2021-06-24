@@ -10,7 +10,8 @@
 var app = new Vue({
   el: '#app',
   data: {
-    dischi: null
+    dischi: null,
+    genereMusicale: 'All'
   },
   mounted: function mounted() {
     var _this = this;
@@ -20,6 +21,19 @@ var app = new Vue({
     })["catch"](function (e) {
       console.log(e);
     });
+  },
+  computed: {
+    categoria: function categoria() {
+      var _this2 = this;
+
+      if (this.genereMusicale === 'All') {
+        return this.dischi;
+      } else {
+        return this.dischi.filter(function (dischi) {
+          return dischi.genre === _this2.genereMusicale;
+        });
+      }
+    }
   }
 });
 
