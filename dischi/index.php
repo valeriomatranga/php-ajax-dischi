@@ -13,6 +13,9 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
 <!-- 
 Bonus: Attraverso un’altra chiamata api, filtrare gli album per genere ( 
 -->
+<?php
+require __DIR__ . './database/db.php';
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,7 +33,23 @@ Bonus: Attraverso un’altra chiamata api, filtrare gli album per genere (
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
   <body>
+    <div id="app" class='dischi'>
+        <?php
+        foreach ($dischi as $disco) : ?>
 
+        <div class="lista_album">
+            <div class='album'>
+                <img src="<?php echo $disco['poster'];?>" alt="">
+                <h3><?php echo $disco['title']; ?></h3>
+                <div class="descrizione">
+                    <span><?php echo $disco['author']?></span>
+                    <span><?php echo $disco['year']?></span>
+                </div>
+            </div>
+        </div>
+
+        <?php endforeach; ?>
+    </div>
 
     <!-- CDN vue js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
