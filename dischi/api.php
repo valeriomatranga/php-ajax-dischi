@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . './src/template/head.php';
-require __DIR__ . './src/template/header.php';
+require __DIR__ . '/src/template/head.php';
+require __DIR__ . '/src/template/header.php';
 ?>
 
 <div id="app">
