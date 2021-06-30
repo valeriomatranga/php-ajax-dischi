@@ -14,11 +14,13 @@ Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, a
 Bonus: Attraverso un’altra chiamata api, filtrare gli album per genere ( 
 -->
 <?php
-require __DIR__ . './database/db.php';
-require __DIR__ . './src/template/head.php';
-require __DIR__ . './src/template/header.php';
-require __DIR__ . './src/template/main.php';
-require __DIR__ . './src/template/script.php';
+require __DIR__ . '/database/db.php';
+require __DIR__ . '/src/template/head.php';
+require __DIR__ . '/src/template/header.php';
+require __DIR__ . '/src/template/main.php';
+require __DIR__ . '/src/template/script.php';
 //var_dump($_SERVER);
+
+echo (__DIR__ . '/database/db.php');
 
 
